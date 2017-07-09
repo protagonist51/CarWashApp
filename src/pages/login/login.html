@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Car Wash App
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form (submit)="doSignin()">
+
+    <ion-list>
+      <ion-item>
+        <ion-label>Administrator Login</ion-label>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-label floating>Username</ion-label>
+        <ion-input type="text" [(ngModel)]="admin.username" name="username"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label floating>Password</ion-label>
+        <ion-input type="password" [(ngModel)]="admin.password" name="password"></ion-input>
+      </ion-item>
+
+      <div padding>
+        <button type="submit" ion-button color="primary" block>Login</button>
+      </div>
+
+    </ion-list>
+  </form>
+</ion-content>
